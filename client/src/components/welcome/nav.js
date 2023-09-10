@@ -1,20 +1,11 @@
-import React from "react";
-import {useNavigate} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-// import {Navbar,Container,Nav} from 'react-bootstrap'
-export const Welcome=()=>
-{
-    const nav=useNavigate();
-    const Wel=()=>
-    {
-        nav('/About')
-    }
-    return(
-        <>
-        <Navbar bg="dark" data-bs-theme="dark">
+function ColorSchemesExample() {
+  return (
+    <>
+      <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="me-auto">
@@ -47,7 +38,8 @@ export const Welcome=()=>
           </Nav>
         </Container>
       </Navbar>
-        <button onClick={Wel}>About</button>
-        </>
-    )
+    </>
+  );
 }
+
+export default ColorSchemesExample;
